@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Application</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+     <!-- Google Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="app-container">
+            <h2>TODO APPLICATION</h2>
+            <h5>* All fields are required</h5>
+            <div class="first-row">
+            <input type="text" placeholder="Task Title">
+            <input type="text" placeholder="Add Description">
+            </div>
+            <div class="second-row">
+            <select name="Priority" id="">
+                    <option value="description"selected disabled>Choose Priority</option>
+                    <option value="High">High Priority</option>
+                    <option value="Medium">Medium Priority</option>
+                    <option value="Low">Low Priority</option>
+            </select>
+            <input type="datetime-local">
+            </div>
+            <div class="counter">Total Tasks: </div>
+            <div class="third-row">
+            <button>Add Task</button>
+            <button>Clear Fields</button>
+            </div>
+        </div>
+    </div>
+    <script src="JS/main.js"></script>
+</body>
+</html>

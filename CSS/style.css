@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+body {
+    background-color: cadetblue;
+}
+.container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.app-container{
+    width: 800px;
+    padding: 25px;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+@media (max-width: 480px){
+    .app-container{
+        width: 450px;
+    }
+}
+.app-container > h2 { 
+    text-align: center;
+    font-size: 35px;
+    color: #213333;
+}
+.app-container > h5 { 
+    /* text-align: center; */
+    font-size: 16px;
+    color: #c01e1e;
+    padding-left: 5%;
+}
+@media (max-width: 480px){
+    .app-container > h2{
+        font-size: 25px;
+    }
+}
+.app-container > .first-row{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.first-row input {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    width: 90%;
+    font-size: 17px;
+}
+.first-row input:focus {
+    outline: none;
+}
+.second-row { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 480px){
+    .second-row{
+        flex-flow: column-reverse;
+        gap: 5px;
+    }
+}
+.second-row :nth-child(1){
+    width: 34%;
+}
+@media (max-width: 480px){
+    .second-row :nth-child(1){
+        width: 40%;
+    }
+}
+.second-row :nth-child(1),
+.second-row :nth-child(2){
+    padding: 10px;
+    font-size: 16px;
+}
+.second-row :nth-child(2){
+    border-radius: 5px;
+    width: 55%;
+    margin-left: 5px;
+}
+.second-row :nth-child(2):focus{
+    border: none;
+    outline: none;
+}
+
+.third-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.third-row button {
+    padding: 10px 20px;
+    width: 200px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.third-row :nth-child(1) {
+    background-color: #144949;
+    margin-right: 5px;
+    color: #fff;
+}
+.third-row :nth-child(2) {
+    background-color: rgb(240, 240, 240);
+}
+.third-row :nth-child(1),
+.third-row :nth-child(2) {
+    border: none;
+    border-radius: 5px;
+}
+@media (max-width: 480px){
+.third-row :nth-child(1),
+.third-row :nth-child(2){
+    width: 160px;
+}
+}
+.third-row :nth-child(1):hover {
+    cursor: pointer;
+    background-color: #144949a6;
+}
+.third-row :nth-child(2):hover {
+    cursor: pointer;
+    background-color: rgb(197, 192, 192);
+}
+
+.new-task {
+    width: 550px;
+    padding: 10px;
+    border: 3px solid rgb(61, 60, 64);
+    position: relative;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    background-color: rgb(245, 237, 237);
+    box-shadow: 0px 1px 26px -3px #555;
+}
+@media (max-width: 480px){
+    .new-task{
+        width: 360px;
+    }
+    }
+.task-title {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    letter-spacing: 1px;
+    position: relative;
+}
+@media (max-width: 480px){
+    .task-title{
+        font-size: 18px;
+    }
+    }
+.task-details {
+    padding: 25px;
+    letter-spacing: 1px;
+}
+.task-details :nth-child(1) {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+@media (max-width: 480px){
+    .task-details :nth-child(1){
+            top: 20px;
+        }
+        }
+.task-details :nth-child(2) {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+@media (max-width: 480px){
+    .task-details :nth-child(1),
+    .task-details :nth-child(2){
+        font-size: 12px;
+    }
+    }
+.task-details :nth-child(3) {
+    position: absolute;
+    bottom: 5px;
+    right: 60px;
+    font-size: 15px;
+}
+@media (max-width: 480px){
+    .task-details :nth-child(3){
+        font-size: 12px;
+    }
+    }
+.task-details :nth-child(4) {
+    font-size: 20px;
+    padding: 15px;
+    color: rgb(11, 63, 56);
+}
+.new-task .fa-xmark{
+position: absolute;
+top: 5px;
+right: 5px;
+padding: 1px 5px;
+font-size: 18px;
+border-radius: 4px;
+cursor: pointer;
+color: #000;
+}
+.new-task input {
+    position: absolute;
+    right: 21px;
+    top: 60px;
+    width: 20px;
+    height: 20px;
+    outline: none;
+}
+.new-task .fa-window-minimize {
+    position: absolute;
+    right: 25px;
+    top: 4px;
+    padding: 1px 5px;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #000;
+}
+
+/* Counter */
+.counter {
+    background-color: #1449496e;
+    padding: 10px 20px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #fff;
+}
